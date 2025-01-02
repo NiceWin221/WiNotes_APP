@@ -1,6 +1,6 @@
 import { useContext, useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
-import { AuthContext } from "../contexts/authContext";
+import { AuthContext } from "../contexts/AuthContext";
 import { deleteNote, getNote, postNote } from "../api";
 import NoteDetail from "../components/NoteDetail";
 import { LanguageContext } from "../contexts/LanguageContext";

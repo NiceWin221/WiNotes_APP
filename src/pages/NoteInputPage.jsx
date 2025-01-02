@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import useInput from "../hooks/useInput"
 import { postNote } from "../api";
-import { AuthContext } from "../contexts/authContext";
+import { AuthContext } from "../contexts/AuthContext";
 import { useNavigate } from "react-router-dom";
 import customToast from "../utils/toastUtil";
 import { ThemeContext } from "../contexts/ThemeContext";

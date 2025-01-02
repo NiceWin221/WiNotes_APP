@@ -2,7 +2,7 @@ import { useContext, useEffect, useState } from "react";
 import NoteList from "../components/NoteList";
 import SearchBar from "../components/SearchBar";
 import { deleteNote, getNotes, postArchiveNote } from "../api";
-import { AuthContext } from "../contexts/authContext";
+import { AuthContext } from "../contexts/AuthContext";
 import { useSearchParams } from "react-router-dom";
 import customToast from "../utils/toastUtil";
 import { ThemeContext } from "../contexts/ThemeContext";

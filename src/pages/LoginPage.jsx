@@ -3,7 +3,7 @@ import useInput from "../hooks/useInput";
 import "./page.css"
 import { FaEnvelope, FaEye, FaEyeSlash, FaLock } from "react-icons/fa";
 import { login } from "../api";
-import { AuthContext } from "../contexts/authContext";
+import { AuthContext } from "../contexts/AuthContext";
 import { LanguageContext } from "../contexts/LanguageContext";
 import customToast from "../utils/toastUtil";
 import { ThemeContext } from "../contexts/ThemeContext";

@@ -5,7 +5,7 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import ThemeToggle from "./ThemeToggle";
 import { LanguageContext } from "../contexts/LanguageContext";
 import LogoutButton from "./LogoutButton";
-import { AuthContext } from "../contexts/authContext";
+import { AuthContext } from "../contexts/AuthContext";
 import customToast from "../utils/toastUtil";
 import { ThemeContext } from "../contexts/ThemeContext";
 
