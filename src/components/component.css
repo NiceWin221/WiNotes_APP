@@ -1,0 +1,183 @@
+/* Navigation Start */
+.navigation {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: auto;
+  padding: 10px 30px;
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--navigation-color);
+  color: var(--font-color);
+  transition: 0.2s ease-in-out;
+  z-index: 10;
+}
+.hamburger {
+  display: none;
+}
+.navigation div {
+  display: flex;
+  padding: 5px;
+  gap: 15px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.navigation div div:hover {
+  color: var(--hover-color);
+}
+
+.navigation div a,
+.navigation div p {
+  text-decoration: none;
+  color: var(--font-color);
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  transition: 0.1 s ease-in-out;
+}
+
+.navigation div p:hover {
+  color: var(--hover-color);
+}
+
+.navigation div a:hover {
+  color: var(--hover-color);
+}
+
+.navigation div a.active {
+  color: var(--hover-color);
+}
+
+/* Navigation End */
+
+/* NoteList, Item, Detail Start */
+.note-list {
+  padding: 20px;
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  height: auto;
+  gap: 15px;
+}
+.note-item {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid var(--font-color);
+  color: var(--font-color);
+  width: calc(25% - 15px);
+  min-width: calc(25% - 15px);
+  min-height: 300px;
+  height: 400px;
+  border-radius: 5px;
+  position: relative;
+  padding: 10px;
+  gap: 5px;
+}
+.note-item.note-detail {
+  width: 100%;
+  height: 500px;
+}
+.note-item h1 {
+  text-decoration: underline;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  cursor: pointer;
+  transition: 0.1s ease-in-out;
+}
+.note-item h1:hover {
+  color: var(--hover-color);
+}
+.note-item span {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  display: flex;
+}
+.note-item span button {
+  width: 50%;
+  border: 2px solid var(--font-color);
+  padding: 10px;
+  background-color: var(--background-color);
+  color: var(--font-color);
+  cursor: pointer;
+  transition: 0.1s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.back {
+  text-decoration: none;
+  border: 2px solid var(--font-color);
+  padding: 10px;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  color: var(--font-color);
+  background-color: var(--background-color);
+  align-items: center;
+  gap: 5px;
+  transition: 0.1s ease-in-out;
+}
+.note-item span button:hover {
+  color: var(--hover-color);
+}
+.back:hover {
+  color: var(--hover-color);
+}
+/* NoteList, Item, Detail End */
+
+/* Special */
+.lined-background {
+  background: repeating-linear-gradient(to bottom, transparent, transparent 23px, var(--line-color) 24px);
+  background-color: transparent;
+}
+.note-detail.lined-background {
+  background: repeating-linear-gradient(to bottom, transparent, transparent 27px, var(--line-color) 28px);
+}
+.search-bar {
+  width: 100%;
+  height: 35px;
+  padding: 10px;
+  border: 2px dashed var(--border-color);
+  outline: none;
+  background: transparent;
+  color: var(--font-color);
+  border-radius: 5px;
+}
+
+.mobile-nav {
+  display: none !important;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .note-item {
+    width: 100%;
+  }
+  .navigation {
+    padding: 10px 10px;
+  }
+  .navigation h1 {
+    font-size: 17px;
+  }
+  .navigation div p,
+  .navigation div a {
+    font-size: 16px;
+  }
+  .navigation div {
+    gap: 8px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .note-item {
+    width: calc(50% - 15px);
+  }
+}

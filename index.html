@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" theme-color="dark"> 
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WiNotes App</title>
+    <script>
+      (function () {
+        const theme = localStorage.getItem("theme") || "dark"; // Default ke "dark"
+        document.documentElement.setAttribute("theme-color", theme);
+
+        if (theme === "dark") {
+          document.documentElement.style.backgroundColor = "#25282c";
+        } else {
+          document.documentElement.style.backgroundColor = "#dad7d3";
+        }
+      })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

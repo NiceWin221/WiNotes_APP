@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+:root {
+  --font-color: #25282c;
+  --background-color: #dad7d3;
+}
+
+[theme-color="light"] {
+  --font-color: #25282c;
+  --background-color: #dad7d3;
+  --border-color: black;
+  --navigation-color: #eeebe8;
+  --hover-color: #ff8c42;
+  --font-a: black;
+  --font-b: white;
+  --line-color: rgba(0, 0, 0, 0.5);
+}
+
+[theme-color="dark"] {
+  --font-color: #929498;
+  --background-color: #25282c;
+  --border-color: #929498;
+  --navigation-color: #111417;
+  --hover-color: #3aa7d9;
+  --font-a: white;
+  --font-b: black;
+  --line-color: rgba(255, 255, 255, 0.5);
+}
+
+html {
+  transition: 0.2s ease-in-out;
+}
+
+body {
+  background: var(--background-color);
+  color: var(--font-color);
+  transition: 0.2s ease-in-out;
+}
+
+main {
+  width: 100%;
+  height: auto;
+  margin-top: 64px;
+  display: flex;
+  justify-content: center;
+}
+
+.plus {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  background-color: var(--navigation-color);
+  box-shadow: 0 0 15px 3px var(--font-b);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.1s ease-in-out;
+}
+.plus:hover {
+  opacity: 0.5;
+}
+
+.lost-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px;
+  color: var(--font-color);
+}
+.lost-page h1 {
+  font-size: 70px;
+}
+.lost-page p {
+  font-size: 25px;
+}
+.lost-button {
+  font-size: 25px;
+  text-decoration: none;
+  color: var(--font-color);
+}
+.lost-button:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,293 @@
+/* AuthCss Start */
+.auth-container {
+  width: 100%;
+  height: 91vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.auth {
+  width: 400px;
+  height: 500px;
+  background-color: var(--navigation-color);
+  border-radius: 5px;
+  box-shadow: 0 10px 15px 3px var(--font-b);
+  color: var(--font-color);
+  display: flex;
+  flex-direction: column;
+  padding: 15px 35px;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  transition: 0.1s ease-in-out;
+}
+
+.auth h1 {
+  margin-bottom: 15px;
+}
+
+.auth form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  gap: 15px;
+}
+
+.auth a {
+  text-decoration: none;
+  color: var(--font-a);
+}
+
+.auth-input {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  width: 100%;
+  border-bottom: 2px solid #929498;
+  padding: 7px;
+}
+
+.auth-input input {
+  width: 100%;
+  height: 25px;
+  background: transparent;
+  outline: none;
+  border: none;
+  color: var(--font-color);
+  font-size: 17px;
+}
+
+.auth-button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.auth-button div {
+  position: relative;
+}
+
+.auth-button div button {
+  border: 2px solid #929498;
+  position: relative;
+  background: transparent;
+  color: #929498;
+  font-weight: bold;
+  font-size: 18px;
+  z-index: 10;
+  padding: 8px 20px;
+  transition: 0.2 ease-in-out;
+  cursor: pointer;
+}
+
+.auth-button div:hover .background-hover {
+  width: 100%;
+}
+
+.auth-button div:hover button {
+  color: #333333;
+}
+/* AuthCss End */
+
+/* HomePage Start */
+.home-container {
+  width: 100%;
+  height: 100%;
+  padding: 30px 150px;
+  color: var(--font-color);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+/* HomePage End */
+
+/* DetailPage Start */
+.detail-page {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  padding: 50px;
+  color: var(--font-color);
+}
+.note-edit {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.note-edit form {
+  width: 500px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  height: 500px;
+  background-color: var(--background-color);
+  border-radius: 5px;
+  border: 2px dashed var(--border-color);
+  z-index: 20;
+  position: relative;
+}
+.note-edit form input,
+.note-edit form textarea {
+  border: 2px dashed var(--border-color);
+  outline: none;
+  background-color: transparent;
+  padding: 10px;
+  border-radius: 5px;
+  color: var(--font-a);
+}
+.note-edit form textarea {
+  min-height: 100px;
+  height: 200px;
+  max-height: 320px;
+  resize: vertical;
+}
+.note-edit form span {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+}
+.note-edit form span button {
+  padding: 10px;
+  width: 50%;
+  background-color: transparent;
+  border: 2px dashed var(--border-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--font-color);
+  cursor: pointer;
+  transition: 0.1s ease-in-out;
+  gap: 5px;
+}
+.note-edit form span button:hover {
+  color: var(--hover-color);
+}
+/* DetailPage End */
+
+/* ArchivedPage Start */
+.archived-page {
+  width: 100%;
+  height: 100%;
+  padding: 30px 150px;
+  color: var(--font-color);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+/* ArchivedPage End */
+
+/* NoteInputPage Start */
+.note-input {
+  width: 600px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: auto;
+  margin-top: 100px;
+  gap: 5px;
+}
+.note-input form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
+  width: 600px;
+}
+.note-input form input,
+.note-input form textarea,
+.note-input form button {
+  background: transparent;
+  border: 2px solid var(--border-color);
+  padding: 5px;
+  outline: none;
+  color: var(--font-color);
+  border-radius: 5px;
+  resize: vertical;
+}
+.note-input form textarea {
+  min-height: 100px;
+  height: 200px;
+  max-height: 325px;
+}
+.note-input form button {
+  padding: 10px;
+  cursor: pointer;
+  transition: 0.1s ease-in-out;
+  font-weight: bold;
+}
+.note-input form button:hover {
+  background-color: var(--navigation-color);
+  border: 2px solid var(--navigation-color);
+  color: var(--hover-color);
+}
+
+/* NoteInputPage End */
+
+/* Special */
+.background-hover {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 100%;
+  background-color: #929498;
+  transition: 0.2s ease-in-out;
+}
+.loading {
+  font-size: larger;
+}
+button:disabled {
+  opacity: 0.5;
+  pointer-events: none; /* This disables any hover or click events */
+}
+
+button:disabled:hover {
+  cursor: not-allowed; /* Optional: show 'not-allowed' cursor */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .home-container {
+    padding: 30px 50px;
+  }
+  .archived-page {
+    padding: 30px 50px;
+  }
+  .note-input {
+    width: 350px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+    margin-top: 100px;
+    gap: 5px;
+  }
+  .note-input h1 {
+    font-size: 20px;
+  }
+  .note-input form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+    width: 350px;
+  }
+  .note-edit form {
+    width: 400px;
+  }
+}
